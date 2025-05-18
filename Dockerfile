@@ -18,4 +18,4 @@ RUN yarn build  # <=== Ensure TypeScript compiles the project
 EXPOSE 3200
 
 # Start the server
-CMD ["node", "dist/server.js"]
+CMD ["node", "dist/index.js"]
