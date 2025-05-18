@@ -12,7 +12,7 @@ RUN yarn install
 COPY . .
 
 # Build the TypeScript project
-RUN yarn build  # <=== Ensure TypeScript compiles the project
+RUN yarn build
 
 # Expose the port
 EXPOSE 3200
