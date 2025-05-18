@@ -20,5 +20,5 @@ app.get('/', (_, res: Response) => {
 })
 
 app.get('/views', (_, res) => {
-    res.render('index', {})
+    res.render('confirm-email', {})
 })

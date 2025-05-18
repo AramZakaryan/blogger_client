@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Confirming...</title>
+</head>
+<body>
+<p>Redirecting, please wait...</p>
+
+<script>
+  // Parse the `code` query parameter from the URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const code = urlParams.get('code');
+
+  if (code) {
+    // Redirect to your backend endpoint
+    window.location.href = `/api/confirm-email/${code}`;
+  } else {
+    document.body.innerHTML = '<p>Error: No confirmation code provided.</p>';
+  }
+</script>
+</body>
+</html>
