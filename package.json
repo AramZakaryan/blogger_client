@@ -1,0 +1,30 @@
+{
+  "name": "blogger_client",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Aram Zakaryan",
+  "private": false,
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.18",
+    "@types/ejs": "^3.1.5",
+    "@types/express": "^5.0.2",
+    "@types/node": "^22.15.18",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "scripts": {
+    "tsc:w": "tsc -w",
+    "copy:views": "cp -R src/views dist/views",
+    "nodemon:w": "nodemon --inspect dist/index.js",
+    "build": "tsc && cp -R src/views dist/views",
+    "start": "node dist/index.js"
+  }
+}
